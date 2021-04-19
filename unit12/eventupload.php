@@ -12,7 +12,7 @@ try {
     $time = date('H:i:s', strtotime($_POST['time']));
      $current_date = date('Y-m-d H:i:s');;
 
-    if(!$Name || !$description || !$presenter || !$date ||$time ) {
+    if(!$Name || !$description || !$presenter || !$date || !$time ) {
         throw new Exception('Please check you information to make sure it is correct');
     }
 
@@ -22,7 +22,7 @@ try {
     
     $data = array(
         'Name' => $Name,
-        'description' => $desc,
+        'description' => $description,
         'presenter' => $presenter,
         'date' => $date,
         'time' => $time,

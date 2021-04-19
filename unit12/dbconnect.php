@@ -11,12 +11,12 @@ function db_connect() {
         $conn = new PDO("mysql:host=$serverName; dbname=$database;", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES,false); 
-        echo "connected successfully";
+       // echo "connected successfully";
 
         return $conn;
     } catch(PDOException $e) {
         set_connection_exception_handler($conn, $e);
-        echo "Problems...";
+        //echo "Problems...";
         error_log($e->getmessage() );
         error_log(var_dump(debug_backtrace() ) );
     }
