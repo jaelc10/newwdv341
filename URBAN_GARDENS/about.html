@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  type="text/css" href="css/style.css">
+  <link rel="stylesheet"  type="text/css" href="scss/style.scss">
+  <link rel="stylesheet"  type="text/css" href="css/UG.css">
+  <link rel="stylesheet"  type="text/css" href="scss/UG.scss">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image:url(images/main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#footer {
+    background-image:url(images/soil1.png);
+    
+}
+.banner {
+    position: relative;
+    background: url(images/rooftop.jpg)no-repeat center center;
+    background-size: cover;
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Urban gardens</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gardentips.php">Garden tips</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="container-fluid banner ">
+  <div class="">
+  
+    
+        <div class="row">              
+          
+            <div>
+            <h1 class="H1">
+            </h1>
+            </br>
+            <h1 style="color:white;">ABOUT US</h1>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="jumbotron">
+  <img src="images/gardener.png" alt=" Gardener clipart" style="width:230px;height:200px;margin-left:15px;" class="img">
+
+<h3>Urban gardens is a family owned business that specializes in developing in gardens and landscaping in urban areas. We are known specifically for <em>our roof top garden designs</em> and have several design awards in urban design and landscaping.</h3> 
+</div>
+
+<!--the end of headers-->
+<h1 class="h1" style="font-size: 70px;">
+  MEET OUR 
+</h1>
+</br>
+
+<div class="word" style="text-align: center;">
+  <span>T</span>
+  <span>E</span>
+  <span>A</span>
+  <span>M</span>
+  <span></span>
+</div>
+<script>
+  const spans = document.querySelectorAll('.word span');
+
+spans.forEach((span, idx) => {
+  span.addEventListener('click', (e) => {
+    e.target.classList.add('active');
+  });
+  span.addEventListener('animationend', (e) => {
+    e.target.classList.remove('active');
+  });
+  
+  // Initial animation
+  setTimeout(() => {
+    span.classList.add('active');
+  }, 750 * (idx+1))
+});
+</script>
+
+<div class="container section">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>
+                        OUR DESIGN APPROACH
+                    </h3>
+                    <p>
+                        Our desing approach envisions the transformation of entire spaces , and we employ multi-disciplinary design and project management, construction and maintainance teams to your vision into reality.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/thewholeteam.jpg" alt=""/>
+                </div>
+            </div>
+          </div>
+ <p>
+    <button type="button" class="btn btn-outline-success"><a href="contact.html">Have any questions?
+    </a></button>
+     </p>
+
+  <div class="container section" class="meet">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/team.jpg" alt="teams at work" height="90%" class="fly"/>
+                </div>
+                <div class="col-md-6">
+                    <h3> OUR VISION</h3>
+                    <p>
+                       We have worked hard, we have great clients and have been fortunate. Our companys vision is to be the premier full-service urban garden design/ landscaping in iowa and to continue operating with integrity and respect towards our employees, clients, suppliers and the natural enviornment. We employ specialist in numerous disiplines to bring together our clients and our creative visions and we bring both an artistic and functional touch to any garden spaces and landscapes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<div class="container">
+  <p class="block">
+    If you are interested in being part of our team send us your resume. We are always looking for more people to be part our family.
+  </p>
+</div>
+
+
+<!--footer-->
+<img src="images/grass.png" alt="grass clipart"style="width:100%; height:400px; margin-bottom: -30px;">
+<section id="footer">
+    <div class="container">
+       <h1 style="text-align: center; color:orange;">CONTACT US AT: (515)123-1234</h1>
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          
+          
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About us</a></li>
+            <li><a href="services.html"><i class="fa fa-angle-double-right"></i>Services</a></li>
+            <li><a href="portfolio.html"><i class="fa fa-angle-double-right"></i>Portfolio</a></li>
+            <li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>ACADEMIC PROJECT</h5>
+          
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Located in:<br>
+             123 Des moines st<br>
+          Des moines, iowa</h5>
+
+          
+        </div>
+       
+      <div class="col-xs-12 col-sm-4 col-md-4">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script></br>
+
+
+        </hr>
+
+      </div> 
+      <center style="color:#4fa56e; text-align: center;">
+       Copyright <?php echo date('Y');?> Jael Colima. All rights reserved
+    </center>
+    </div>
+  </section>
+
+
+
+
+
+</body>
+</html>
